@@ -1,0 +1,36 @@
+{
+    "generated_at": "2026-11-23T16:00:00.123456Z",
+    "condition": "unhealthy",
+    "probes": [
+        {
+            "id": "debug-mode",
+            "title": "Debug mode",
+            "condition": "healthy",
+            "summary": "Disabled",
+            "detail": "",
+            "facts": {
+                "expected": false,
+                "actual": false
+            }
+        },
+        {
+            "id": "disk-usage",
+            "title": "Disk usage",
+            "condition": "unhealthy",
+            "summary": "95% used",
+            "detail": "/ is 95% full (limit 90%).",
+            "facts": {
+                "path": "/",
+                "used_percent": 95
+            }
+        },
+        {
+            "id": "horizon",
+            "title": "Horizon",
+            "condition": "not_applicable",
+            "summary": "Not applicable",
+            "detail": "laravel/horizon is not installed.",
+            "facts": {}
+        }
+    ]
+}

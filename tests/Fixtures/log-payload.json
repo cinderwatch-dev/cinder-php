@@ -1,0 +1,136 @@
+{
+    "resourceLogs": [
+        {
+            "resource": {
+                "attributes": [
+                    {
+                        "key": "service.name",
+                        "value": {
+                            "stringValue": "Shop"
+                        }
+                    },
+                    {
+                        "key": "service.version",
+                        "value": {
+                            "stringValue": "1.4.0"
+                        }
+                    },
+                    {
+                        "key": "deployment.environment.name",
+                        "value": {
+                            "stringValue": "production"
+                        }
+                    },
+                    {
+                        "key": "telemetry.sdk.name",
+                        "value": {
+                            "stringValue": "cinderwatch/cinder-laravel"
+                        }
+                    },
+                    {
+                        "key": "telemetry.sdk.version",
+                        "value": {
+                            "stringValue": "0.2.0"
+                        }
+                    },
+                    {
+                        "key": "telemetry.sdk.language",
+                        "value": {
+                            "stringValue": "php"
+                        }
+                    },
+                    {
+                        "key": "process.runtime.name",
+                        "value": {
+                            "stringValue": "php"
+                        }
+                    },
+                    {
+                        "key": "process.runtime.version",
+                        "value": {
+                            "stringValue": "8.4.0"
+                        }
+                    },
+                    {
+                        "key": "cinder.framework.name",
+                        "value": {
+                            "stringValue": "laravel"
+                        }
+                    },
+                    {
+                        "key": "cinder.framework.version",
+                        "value": {
+                            "stringValue": "12.0.0"
+                        }
+                    },
+                    {
+                        "key": "vcs.ref.head.revision",
+                        "value": {
+                            "stringValue": "4f1c2e9"
+                        }
+                    },
+                    {
+                        "key": "vcs.ref.head.name",
+                        "value": {
+                            "stringValue": "main"
+                        }
+                    },
+                    {
+                        "key": "cinder.vcs.message",
+                        "value": {
+                            "stringValue": "Ship checkout"
+                        }
+                    }
+                ],
+                "droppedAttributesCount": 0
+            },
+            "scopeLogs": [
+                {
+                    "scope": {
+                        "name": "cinderwatch/cinder-laravel",
+                        "version": "0.2.0",
+                        "attributes": [],
+                        "droppedAttributesCount": 0
+                    },
+                    "logRecords": [
+                        {
+                            "timeUnixNano": 1700000000000000000,
+                            "observedTimeUnixNano": 1700000000000000000,
+                            "traceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "spanId": "1000000000000001",
+                            "flags": "01",
+                            "severityText": "info",
+                            "severityNumber": 9,
+                            "attributes": [
+                                {
+                                    "key": "cinder.log.context",
+                                    "value": {
+                                        "kvlistValue": {
+                                            "values": [
+                                                {
+                                                    "key": "user",
+                                                    "value": {
+                                                        "stringValue": "rhys"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "key": "cinder.entry.kind",
+                                    "value": {
+                                        "stringValue": "cli"
+                                    }
+                                }
+                            ],
+                            "body": {
+                                "stringValue": "User {user} signed in"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

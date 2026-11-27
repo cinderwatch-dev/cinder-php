@@ -1,0 +1,9 @@
+{
+    "tasks": [
+        {
+            "key": "inspire",
+            "id": "9b2f6c1e-5d4a-4f3b-8e7d-2a1c0b9f8e7d",
+            "heartbeat_url": "https://cinder.test/api/v1/heartbeats/9b2f6c1e-5d4a-4f3b-8e7d-2a1c0b9f8e7d"
+        }
+    ]
+}

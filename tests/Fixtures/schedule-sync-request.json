@@ -1,0 +1,12 @@
+{
+    "tasks": [
+        {
+            "key": "inspire",
+            "summary": "Display an inspiring quote",
+            "cron": "* * * * *",
+            "interval_minutes": null,
+            "timezone": "UTC",
+            "grace_minutes": 5
+        }
+    ]
+}

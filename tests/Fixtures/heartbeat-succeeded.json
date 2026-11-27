@@ -1,0 +1,6 @@
+{
+    "event": "succeeded",
+    "duration_ms": 1234,
+    "memory_bytes": 20971520,
+    "exit_code": 0
+}

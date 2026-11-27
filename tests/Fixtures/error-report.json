@@ -1,0 +1,93 @@
+{
+    "event_id": "0f4b2b0e-6a43-4d63-9a43-6f3f3f1f9b1c",
+    "occurred_at": "2026-11-23T16:00:00.123456Z",
+    "handled": false,
+    "exception": {
+        "type": "RuntimeException",
+        "message": "Order could not be stored",
+        "code": "0",
+        "frames": [
+            {
+                "path": "/var/www/app/Http/Controllers/OrderController.php",
+                "line": 42,
+                "function": "store",
+                "class": "App\\Http\\Controllers\\OrderController",
+                "in_app": true,
+                "source": {
+                    "start_line": 41,
+                    "lines": [
+                        "        try {",
+                        "            throw new RuntimeException('Order could not be stored', 0, $previous);",
+                        "        }"
+                    ]
+                }
+            },
+            {
+                "path": "/var/www/vendor/laravel/framework/src/Illuminate/Routing/Controller.php",
+                "line": 54,
+                "function": "callAction",
+                "class": "Illuminate\\Routing\\Controller",
+                "in_app": false,
+                "source": null
+            },
+            {
+                "path": "/var/www/public/index.php",
+                "line": 17,
+                "function": "{main}",
+                "class": null,
+                "in_app": true,
+                "source": null
+            }
+        ],
+        "cause": {
+            "type": "PDOException",
+            "message": "SQLSTATE[23000]: Integrity constraint violation",
+            "code": "23000",
+            "frames": [
+                {
+                    "path": "/var/www/app/Models/Order.php",
+                    "line": 88,
+                    "function": "save",
+                    "class": "App\\Models\\Order",
+                    "in_app": true,
+                    "source": null
+                }
+            ],
+            "cause": null
+        }
+    },
+    "trace": {
+        "trace_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "span_id": "1000000000000001"
+    },
+    "fingerprint": [
+        "orders",
+        "store"
+    ],
+    "context": {
+        "cinder.entry.kind": "web",
+        "cinder.entry.name": "/orders",
+        "cinder.entry.handler": "App\\Http\\Controllers\\OrderController@store",
+        "cinder.entry.route": "/orders",
+        "http.request.method": "POST",
+        "url.path": "/orders",
+        "user.id": "42",
+        "vcs.ref.head.revision": "4f1c2e9",
+        "vcs.ref.head.name": "main",
+        "cinder.vcs.message": "Ship checkout",
+        "process.runtime.name": "php",
+        "process.runtime.version": "8.4.0",
+        "cinder.framework.name": "laravel",
+        "cinder.framework.version": "12.0.0"
+    },
+    "runtime": {
+        "root_path": "/var/www",
+        "service": "Shop",
+        "version": "1.4.0",
+        "environment": "production"
+    },
+    "sdk": {
+        "name": "cinderwatch/cinder-laravel",
+        "version": "0.2.0"
+    }
+}

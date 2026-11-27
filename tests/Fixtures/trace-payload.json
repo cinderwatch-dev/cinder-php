@@ -1,0 +1,155 @@
+{
+    "resourceSpans": [
+        {
+            "resource": {
+                "attributes": [
+                    {
+                        "key": "service.name",
+                        "value": {
+                            "stringValue": "Shop"
+                        }
+                    },
+                    {
+                        "key": "service.version",
+                        "value": {
+                            "stringValue": "1.4.0"
+                        }
+                    },
+                    {
+                        "key": "deployment.environment.name",
+                        "value": {
+                            "stringValue": "production"
+                        }
+                    },
+                    {
+                        "key": "telemetry.sdk.name",
+                        "value": {
+                            "stringValue": "cinderwatch/cinder-laravel"
+                        }
+                    },
+                    {
+                        "key": "telemetry.sdk.version",
+                        "value": {
+                            "stringValue": "0.2.0"
+                        }
+                    },
+                    {
+                        "key": "telemetry.sdk.language",
+                        "value": {
+                            "stringValue": "php"
+                        }
+                    },
+                    {
+                        "key": "process.runtime.name",
+                        "value": {
+                            "stringValue": "php"
+                        }
+                    },
+                    {
+                        "key": "process.runtime.version",
+                        "value": {
+                            "stringValue": "8.4.0"
+                        }
+                    },
+                    {
+                        "key": "cinder.framework.name",
+                        "value": {
+                            "stringValue": "laravel"
+                        }
+                    },
+                    {
+                        "key": "cinder.framework.version",
+                        "value": {
+                            "stringValue": "12.0.0"
+                        }
+                    },
+                    {
+                        "key": "vcs.ref.head.revision",
+                        "value": {
+                            "stringValue": "4f1c2e9"
+                        }
+                    },
+                    {
+                        "key": "vcs.ref.head.name",
+                        "value": {
+                            "stringValue": "main"
+                        }
+                    },
+                    {
+                        "key": "cinder.vcs.message",
+                        "value": {
+                            "stringValue": "Ship checkout"
+                        }
+                    }
+                ],
+                "droppedAttributesCount": 0
+            },
+            "scopeSpans": [
+                {
+                    "scope": {
+                        "name": "cinderwatch/cinder-laravel",
+                        "version": "0.2.0",
+                        "attributes": [],
+                        "droppedAttributesCount": 0
+                    },
+                    "spans": [
+                        {
+                            "traceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "spanId": "1000000000000001",
+                            "parentSpanId": null,
+                            "name": "Request - /orders",
+                            "startTimeUnixNano": 1700000000000000000,
+                            "endTimeUnixNano": 1700000000120000000,
+                            "attributes": [
+                                {
+                                    "key": "cinder.span.kind",
+                                    "value": {
+                                        "stringValue": "route"
+                                    }
+                                },
+                                {
+                                    "key": "cinder.entry.kind",
+                                    "value": {
+                                        "stringValue": "web"
+                                    }
+                                },
+                                {
+                                    "key": "cinder.entry.name",
+                                    "value": {
+                                        "stringValue": "/orders"
+                                    }
+                                },
+                                {
+                                    "key": "cinder.entry.handler",
+                                    "value": {
+                                        "stringValue": "App\\Http\\Controllers\\OrderController@store"
+                                    }
+                                },
+                                {
+                                    "key": "cinder.entry.route",
+                                    "value": {
+                                        "stringValue": "/orders"
+                                    }
+                                },
+                                {
+                                    "key": "http.request.method",
+                                    "value": {
+                                        "stringValue": "POST"
+                                    }
+                                }
+                            ],
+                            "droppedAttributesCount": 0,
+                            "events": [],
+                            "droppedEventsCount": 0,
+                            "links": [],
+                            "droppedLinksCount": 0,
+                            "status": {
+                                "code": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

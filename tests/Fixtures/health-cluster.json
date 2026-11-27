@@ -1,0 +1,83 @@
+{
+    "generated_at": "2026-11-23T16:00:00.000000Z",
+    "condition": "unhealthy",
+    "probes": [
+        {
+            "id": "database",
+            "title": "Database",
+            "condition": "healthy",
+            "summary": "mysql",
+            "detail": "",
+            "facts": {},
+            "node": "web"
+        },
+        {
+            "id": "queue",
+            "title": "Queue",
+            "condition": "degraded",
+            "summary": "Backlog",
+            "detail": "500 jobs waiting",
+            "facts": {
+                "pending_jobs": 500
+            },
+            "node": "web"
+        },
+        {
+            "id": "worker-snapshot",
+            "title": "Worker report",
+            "condition": "unhealthy",
+            "summary": "Report missing",
+            "detail": "The Worker server has not stored a health snapshot within the last 180 seconds.",
+            "facts": {
+                "max_age_seconds": 180
+            },
+            "node": "worker"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "web",
+            "label": "Web",
+            "generated_at": "2026-11-23T16:00:00.000000Z",
+            "stale": false,
+            "probes": [
+                {
+                    "id": "database",
+                    "title": "Database",
+                    "condition": "healthy",
+                    "summary": "mysql",
+                    "detail": "",
+                    "facts": {}
+                },
+                {
+                    "id": "queue",
+                    "title": "Queue",
+                    "condition": "degraded",
+                    "summary": "Backlog",
+                    "detail": "500 jobs waiting",
+                    "facts": {
+                        "pending_jobs": 500
+                    }
+                }
+            ]
+        },
+        {
+            "name": "worker",
+            "label": "Worker",
+            "generated_at": "2026-11-23T15:59:30.000000Z",
+            "stale": true,
+            "probes": [
+                {
+                    "id": "worker-snapshot",
+                    "title": "Worker report",
+                    "condition": "unhealthy",
+                    "summary": "Report missing",
+                    "detail": "The Worker server has not stored a health snapshot within the last 180 seconds.",
+                    "facts": {
+                        "max_age_seconds": 180
+                    }
+                }
+            ]
+        }
+    ]
+}
